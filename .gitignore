@@ -1,0 +1,13 @@
+*
+!README.md
+!.gitignore
+!flake.nix
+!flake.lock
+!docs/
+!docs/**
+!homelab/
+!homelab/*.nix
+!modules/
+!modules/**
+!scripts/
+!scripts/**
