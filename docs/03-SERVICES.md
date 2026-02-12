@@ -257,6 +257,7 @@ nix run .#deploy-homelab
 
 # Or with Colmena
 nix run .#colmena -- apply
+#nix run .#colmena -- build
 ```
 
 ## 8. Access Services

@@ -103,7 +103,7 @@ skarabox.hosts = {
 ## 4. Generate Known Hosts
 
 ```bash
-nix run .#homelab-generateKnownHosts
+nix run .#homelab-gen-knownhosts-file
 ```
 
 ## 5. Create Bootable USB (On-Premise)
@@ -130,7 +130,8 @@ sync
 From your local machine:
 
 ```bash
-nix run .#homelab-facter > homelab/facter.json
+#nix run .#homelab-facter > homelab/facter.json
+sudo nix run nixpkgs#nixos-facter -- -o homelab/facter.json
 git add homelab/facter.json
 ```
 
